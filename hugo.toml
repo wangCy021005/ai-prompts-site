@@ -1,7 +1,7 @@
 # Hugo 配置 - AI 提示词库
 # 主题：hugo-book
 
-baseURL = "https://ai-prompts-site-ku8429tmu-binance33.vercel.app/"
+baseURL = "/"
 languageCode = "zh-cn"
 title = "AI 提示词库"
 theme = "book"
