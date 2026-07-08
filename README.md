@@ -2,6 +2,8 @@
 
 > 系统整理 AI 提示词，涵盖写作、编程、办公、绘图。让 AI 真正为你所用。
 
+🌐 **线上地址**：https://ai-prompts-site-kappa.vercel.app/
+
 ## 这是什么
 
 一个纯静态的 AI 提示词库网站，用 Hugo + Book 主题搭建，部署在 Vercel。

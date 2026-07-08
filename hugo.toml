@@ -1,7 +1,7 @@
 # Hugo 配置 - AI 提示词库
 # 主题：hugo-book
 
-baseURL = "/"
+baseURL = "https://ai-prompts-site-kappa.vercel.app/"
 languageCode = "zh-cn"
 title = "AI 提示词库"
 theme = "book"
@@ -9,7 +9,7 @@ defaultContentLanguage = "zh"
 
 # 构建设置
 enableGitInfo = false   # 建站阶段关闭，避免无 git commit 报错；上线后可开
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 # SEO
 [services.googleAnalytics]
