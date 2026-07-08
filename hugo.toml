@@ -1,0 +1,56 @@
+# Hugo 配置 - AI 提示词库
+# 主题：hugo-book
+
+baseURL = "https://ai-prompts.example.com/"
+languageCode = "zh-cn"
+title = "AI 提示词库"
+theme = "book"
+defaultContentLanguage = "zh"
+
+# 构建设置
+enableGitInfo = false   # 建站阶段关闭，避免无 git commit 报错；上线后可开
+enableRobotsTXT = true
+
+# SEO
+[services.googleAnalytics]
+# id = "G-XXXXXXXXXX"  # 上线后填你的 GA ID
+
+[params]
+  # 站点信息
+  description = "系统整理 AI 提示词，涵盖写作、编程、办公、绘图。让 AI 真正为你所用。"
+  author = "AI 提示词库"
+
+  # Book 主题配置
+  BookTheme = "auto"           # light/dark/auto
+  BookSearch = true            # 开启搜索（lunr.js）
+  BookMenu = true              # 开启侧边栏菜单
+  BookToC = true               # 开启目录
+  BookSection = "docs"         # 内容主目录
+  BookRepo = "https://github.com/wangCy021005/ai-writer-toolkit"  # 显示编辑链接
+
+  # 自定义
+  BookDateFormat = "2006-01-02"
+  BookComments = false
+
+[markup]
+  [markup.highlight]
+    style = "dracula"          # 代码高亮主题
+    lineNos = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true            # 允许 HTML
+
+# 菜单结构（顶部导航）
+[menu]
+  [[menu.before]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.after]]
+    name = "关于"
+    url = "/about/"
+    weight = 10
+
+# 输出格式（搜索需要）
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
